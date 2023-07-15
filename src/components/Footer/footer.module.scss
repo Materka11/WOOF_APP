@@ -1,0 +1,10 @@
+.footer {
+  height: 100px;
+  margin-top: auto;
+  //margin po to zeby byl ciagle na dole
+  @media (max-width: 768px) {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+  }
+}

@@ -1,0 +1,20 @@
+.btnPrimary {
+  background-color: var(--yellow-color) !important;
+  border-color: var(--yellow-color) !important;
+  color: var(--bs-dark) !important;
+  box-sizing: border-box;
+}
+
+.btnPrimary:hover {
+  background-color: var(--bs-dark) !important;
+  border-color: var(--bs-white) !important;
+  color: var(--bs-white) !important;
+}
+
+.searchBar:focus {
+  border-color: var(--yellow-color);
+}
+
+.searchBar::-ms-clear {
+  display: none;
+}

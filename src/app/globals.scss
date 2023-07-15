@@ -1,0 +1,44 @@
+:root {
+  --yellow-color: #efba54;
+  --grey-color: #737373;
+}
+
+.bg-yellow {
+  background-color: var(--yellow-color);
+}
+
+.text-grey {
+  color: var(--grey-color);
+}
+
+.roundend-50 {
+  border-radius: 50%;
+}
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--grey-color) !important ;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--grey-color) !important ;
+}
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--grey-color) !important ;
+}
+
+.container-page {
+  @media (max-width: 768px) {
+    margin-bottom: 75px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

@@ -5,5 +5,5 @@ export async function getAllDogs() {
     throw new Error("Failed to fetch all dogs");
   }
 
-  return res.json() as Promise<DogData>;
+  return res.json() as Promise<DogData>; // przypisanie typu dla wygodniejszego dzialania na danych
 }

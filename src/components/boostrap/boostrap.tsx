@@ -18,6 +18,8 @@ export {
   DropdownButton as BS_DropdownButton,
   Figure as BS_Figure,
   Form as BS_Form,
+  FormControl as BS_FormControl,
+  FormLabel as BS_FormLabel,
   FloatingLabel as BS_FloatingLabel,
   InputGroup as BS_InputGroup,
   ListGroup as BS_ListGroup,
