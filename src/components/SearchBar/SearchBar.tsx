@@ -21,8 +21,9 @@ export default function SearchBar() {
   });
 
   const onSubmit = ({ query }: { query: string }) => {
-    router.push(`search/${query}`);
+    router.push(`/search/${query}`);
   };
+
   return (
     <BS_Form onSubmit={handleSubmit(onSubmit)}>
       <BS_InputGroup>

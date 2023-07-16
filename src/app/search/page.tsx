@@ -1,14 +1,18 @@
-import dogImage from "../../../public/dogImage.jpg";
+import { getRandomDogImage } from "@/lib/getRandomDogImage/getRandomDogImage";
 
 import Image from "next/image";
 
-export default function Search() {
+export default async function Search() {
+  const { message } = await getRandomDogImage();
+
   return (
     <div className="d-flex justify-content-center align-items-center flex-column">
       <Image
-        src={dogImage}
+        src={message}
         alt="dog image"
-        width={300}
+        width={250}
+        height={250}
+        objectFit="cover"
         className="my-5 roundend-50"
       />
       <p className="text-center text-grey">

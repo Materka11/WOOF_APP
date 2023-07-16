@@ -7,6 +7,10 @@
   background-color: var(--yellow-color);
 }
 
+.bg-grey {
+  background-color: var(--grey-color);
+}
+
 .text-grey {
   color: var(--grey-color);
 }
@@ -35,6 +39,10 @@
   @media (max-width: 768px) {
     margin-bottom: 75px;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 body {

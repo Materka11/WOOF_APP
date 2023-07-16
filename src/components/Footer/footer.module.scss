@@ -8,3 +8,39 @@
     height: 70px;
   }
 }
+
+.bgHover {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  @media (max-width: 768px) {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.bgHoverHome {
+  transform: translateX(-40px);
+  @media (max-width: 768px) {
+    transform: translate(-34px, 1px);
+  }
+}
+
+.bgHoverSearch {
+  transform: translateX(40px);
+  @media (max-width: 768px) {
+    transform: translate(34px, 1px);
+  }
+}
+
+.link {
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  opacity: 0.5;
+  @media (max-width: 768px) {
+    opacity: 1;
+  }
+}

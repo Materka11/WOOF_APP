@@ -1,14 +1,27 @@
-import dogImage from "../../../../public/dogImage.jpg";
+import { getImageByBreed } from "@/lib/getImageByBreed/getImageByBreed";
 
 import Image from "next/image";
+import { Metadata } from "next";
 
-export default function Breed({ params: { breed } }: BreedProps) {
+export async function generateMetadata({
+  params: { breed },
+}: BreedProps): Promise<Metadata> {
+  return {
+    title: `WOOF APP | ${breed.toUpperCase()}`,
+  };
+}
+
+export default async function Breed({ params: { breed } }: BreedProps) {
+  const { message } = await getImageByBreed(breed);
+
   return (
     <div className="d-flex justify-content-center align-items-center flex-column container-page">
       <Image
-        src={dogImage}
+        src={message}
         alt="dog image"
         width={300}
+        height={300}
+        objectFit="cover"
         className="my-5 roundend-50"
       />
       <section className="w-100">

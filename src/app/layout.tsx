@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "WOOF APP",
   description:
     "A comprehensive application that provides information about dog breeds, grooming, and health, helping you become an expert in taking care of your four-legged friend.",
+  icons: {
+    icon: "dog.svg",
+  },
 };
 
 export default function RootLayout({
